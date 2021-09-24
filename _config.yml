@@ -1,16 +1,17 @@
-author: yanm1ng # 作者
-description: yanm1ng's blog
-keyword: hexo-theme, vuejs
+author: ooooooh灰灰 # 作者
+description: 灰灰的打工日记
+keyword: java、go、native-cloud
 
 excerpt_link: Read more
 
 menu:
  Home: /
- Series: /series/
+#  Series: /series/
  Tags: /tags/
  Archives: /archives/
  Projects: /project/
  About: /about/
+ Wiki: /wikis/
 
 # highlight
 highlight:
@@ -20,10 +21,10 @@ highlight:
 catalog: true
 
 # donate
-donate: true
+donate: false
 
 # qrcode
-qrcode: true
+qrcode: ture
 
 # comment
 # you can set utterances, gitment, uyan or disqus
@@ -49,13 +50,13 @@ disqus_shortname:
 
 about: 
   banner: ""
-  avatar: https://avatars3.githubusercontent.com/u/16443628?v=3&s=460
+  avatar: https://cdn.jsdelivr.net/gh/greycodee/greycodee.github.io/images/logo3.png
   description: "The end is always near."
-  weibo_username: yanm1ng
-  twitter_username: yanm1ng
-  github_username: yanm1ng
-  zhihu_username: yummy1121
-  douban_username: yanm1ng
+  weibo_username: 
+  twitter_username: 
+  github_username: greycodee
+  zhihu_username: hui-hui-3-24-90
+  douban_username: 
   linkedin_username: 
 
 # MathJax Support
