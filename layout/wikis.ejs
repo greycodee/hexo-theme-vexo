@@ -1,0 +1,42 @@
+<div id="article-banner">
+    <h2>Wikis</h2>
+    <p class="post-date">Wiki Retrieval</p>
+  </div>
+  <main class="app-body project-app">
+    <div class="card-container" id="all-project">
+          <% for (var name in site.data.wikis) { %>
+            <% var item = site.data.wikis[name]; %>
+            <section class="project-card">
+              <a class="card-wrap" href="<%= item.link %>" target="_blank">
+                <div class="card-header" data-name="<%= name %>"></div>
+                <h3 class="card-title"><%= name %></h3>
+                <p class="card-description"><%= item.desc %></p>
+              </a>
+            </section>
+            <% } %>
+
+    </div>
+  </main>
+  
+  <script>
+    (function () {
+        var url = '<%= config.url %>/<%= page.path %>'
+        $('#article-banner').geopattern(url)
+        $('.header').removeClass('fixed-header')
+
+        $('.card-header').each(function() {
+          var name = $(this).data('name');
+          console.log(name)
+          $(this).geopattern(name);
+        })
+
+        var windowH = $(window).height();
+        var container = $('.card-container')
+        var bodyH = container.offset().top + container[0].offsetHeight + 71;
+        if (bodyH < windowH) {
+            container.css({
+                'margin-bottom': windowH - bodyH
+            })
+        }
+    })();
+  </script>
